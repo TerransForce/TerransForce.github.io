@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>POJ2239 Selecting Courses | fire in dark</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="��ĿDescription1000MS/65536KIt is well known that it is not easy to select courses in the college, for there is usually conflict among the time of the courses. Li Ming is a student who loves study ever">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POJ2239 Selecting Courses">
+<meta property="og:url" content="http://yoursite.com/2015/08/04/POJ2239/index.html">
+<meta property="og:site_name" content="fire in dark">
+<meta property="og:description" content="��ĿDescription1000MS/65536KIt is well known that it is not easy to select courses in the college, for there is usually conflict among the time of the courses. Li Ming is a student who loves study ever">
+<meta property="og:updated_time" content="2015-08-04T08:43:00.371Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="POJ2239 Selecting Courses">
+<meta name="twitter:description" content="��ĿDescription1000MS/65536KIt is well known that it is not easy to select courses in the college, for there is usually conflict among the time of the courses. Li Ming is a student who loves study ever">
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="undefined" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">物种的进化</a></h1>
+		</hgroup>
+
+		
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">物种的进化</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="undefined" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">物种的进化</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-POJ2239" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/04/POJ2239/" class="article-date">
+  	<time datetime="2015-08-04T07:38:48.000Z" itemprop="datePublished">2015-08-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      POJ2239 Selecting Courses
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/POJ/">POJ</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/����ͼ/">����ͼ</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="��Ŀ">��Ŀ</h1><h2 id="Description">Description</h2><p>1000MS/65536K<br>It is well known that it is not easy to select courses in the college, for there is usually conflict among the time of the courses. Li Ming is a student who loves study every much, and at the beginning of each term, he always wants to select courses as more as possible. Of course there should be no conflict among the courses he selects. </p>
+<p>There are 12 classes every day, and 7 days every week. There are hundreds of courses in the college, and teaching a course needs one class each week. To give students more convenience, though teaching a course needs only one class, a course will be taught several times in a week. For example, a course may be taught both at the 7-th class on Tuesday and 12-th class on Wednesday, you should assume that there is no difference between the two classes, and that students can select any class to go. At the different weeks, a student can even go to different class as his wish. Because there are so many courses in the college, selecting courses is not an easy job for Li Ming. As his good friends, can you help him?<br><a id="more"></a></p>
+<h2 id="Input">Input</h2><p>The input contains several cases. For each case, the first line contains an integer n (1 &lt;= n &lt;= 300), the number of courses in Li Ming’s college. The following n lines represent n different courses. In each line, the first number is an integer t (1 &lt;= t &lt;= 7*12), the different time when students can go to study the course. Then come t pairs of integers p (1 &lt;= p &lt;= 7) and q (1 &lt;= q &lt;= 12), which mean that the course will be taught at the q-th class on the p-th day of a week. </p>
+<h2 id="Output">Output</h2><p>For each test case, output one integer, which is the maximum number of courses Li Ming can select.</p>
+<h2 id="Simple_input">Simple input</h2><p>5<br>1 1 1<br>2 1 1 2 2<br>1 2 2<br>2 3 2 3 3<br>1 3 3</p>
+<h2 id="Simple_output">Simple output</h2><p>4</p>
+<h2 id="��Ŀ����">��Ŀ����</h2><p>�������Ĵ�������ѧУ���Ὺn�ſΣ�ÿ�ſ�һ�ܿ����϶���������һ�µģ�ѧУ�İ�����ÿ��7��ÿ��ʮ���ڿΣ�����������ѡ�����ſγ̡���ʵ������һ������ͼ���⣬�����������ν�ͼ�����Խ�ÿ�ܵĿγ̰��ŷ���һ��7*12�ľ������棬����ÿһ���㸳ֵ�����γ̰�����ʱ���Ĺ�ϵͼ��Ȼ������ͼ����ƥ�伴��.</p>
+<h2 id="AC����">AC����</h2><p>8596K/63MS<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;ctype.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> eps <span class="number">1e-8</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> INF <span class="number">0x7fffffff</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> N <span class="number">1005</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> PI acos(-<span class="number">1.0</span>)</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> seed <span class="number">31</span><span class="comment">//131,1313</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> ULL;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> useif[N];   <span class="comment">//��¼y�нڵ��Ƿ�ʹ�� 0��ʾû�з��ʹ���1Ϊ���ʹ�</span></span><br><span class="line"><span class="keyword">int</span> link[N];   <span class="comment">//��¼��ǰ��y�ڵ�������x�Ľڵ�</span></span><br><span class="line"><span class="keyword">int</span> mat[N][N]; <span class="comment">//��¼����x��y�ıߣ�����i��j֮���б���Ϊ1������Ϊ0</span></span><br><span class="line"><span class="keyword">int</span> gn,gm;    <span class="comment">//����ͼ��x��y�е�����Ŀ</span></span><br><span class="line"><span class="comment">//char mapp[N][N];</span></span><br><span class="line"><span class="keyword">int</span> mat1[N][N];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">can</span><span class="params">(<span class="keyword">int</span> t)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=gm; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(useif[i]==<span class="number">0</span> &amp;&amp; mat[t][i])</span><br><span class="line">        &#123;</span><br><span class="line">            useif[i]=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(link[i]==-<span class="number">1</span> || can(link[i]))</span><br><span class="line">            &#123;</span><br><span class="line">                link[i]=t;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">MaxMatch</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,num;</span><br><span class="line">    num=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(link,<span class="number">0xff</span>,<span class="keyword">sizeof</span>(link));</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=gn; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(useif,<span class="number">0</span>,<span class="keyword">sizeof</span>(useif));</span><br><span class="line">        <span class="keyword">if</span>(can(i))</span><br><span class="line">            num++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> num;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(useif,<span class="number">0</span>,<span class="keyword">sizeof</span>(useif));</span><br><span class="line">    <span class="built_in">memset</span>(link,<span class="number">0</span>,<span class="keyword">sizeof</span>(link));</span><br><span class="line">    <span class="built_in">memset</span>(mat,<span class="number">0</span>,<span class="keyword">sizeof</span>(mat));</span><br><span class="line">    <span class="built_in">memset</span>(mat1,<span class="number">0</span>,<span class="keyword">sizeof</span>(mat1));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> t;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;t)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n,m,num=<span class="number">1</span>;</span><br><span class="line">        init();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">7</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=<span class="number">12</span>; j++)</span><br><span class="line">            &#123;</span><br><span class="line">                mat1[i][j]=num++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=t; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> tem;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;tem);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=tem; j++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">int</span> a,b;</span><br><span class="line">                <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;a,&amp;b);</span><br><span class="line">                mat[i][mat1[a][b]]=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        gm=<span class="number">7</span>*<span class="number">12</span>;</span><br><span class="line">        gn=t;</span><br><span class="line">        <span class="keyword">int</span> ans=MaxMatch();</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="��Ŀ����-1">��Ŀ����</h2><p><a href="http://poj.org/problem?id=2536" target="_blank" rel="external">http://poj.org/problem?id=2536</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/04/POJ2536/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">POJ2536 Gopher II</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 物种的进化
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script>
+	var yiliaConfig = {
+		fancybox: undefined,
+		mathjax: undefined,
+		animate: undefined,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: undefined
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+  </div>
+</body>
+</html>
