@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>POJ3281 Dining | fire in the dark</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="题目Description2000MS/65536KJohn Doe, a skilled pilot, enjoys traveling. While on vacation, he rents a small plane and starts visiting beautiful places. To save money, John must determine the shortest c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POJ3281 Dining">
+<meta property="og:url" content="http://yoursite.com/2015/10/11/题解/POJ/POJ2677/index.html">
+<meta property="og:site_name" content="fire in the dark">
+<meta property="og:description" content="题目Description2000MS/65536KJohn Doe, a skilled pilot, enjoys traveling. While on vacation, he rents a small plane and starts visiting beautiful places. To save money, John must determine the shortest c">
+<meta property="og:updated_time" content="2015-10-11T06:19:19.168Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="POJ3281 Dining">
+<meta name="twitter:description" content="题目Description2000MS/65536KJohn Doe, a skilled pilot, enjoys traveling. While on vacation, he rents a small plane and starts visiting beautiful places. To save money, John must determine the shortest c">
+  
+    <link rel="alternative" href="/atom.xml" title="fire in the dark" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://img1.mydrivers.com/img/20141207/2b6cb08841554201b254348b6d260eb5.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">物种的进化</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/ACM/" style="font-size: 20px;">ACM</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/HDU/" style="font-size: 12.5px;">HDU</a> <a href="/tags/POJ/" style="font-size: 17.5px;">POJ</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/算法基础/" style="font-size: 15px;">算法基础</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://gyshgx868.github.io/">gyshgx868的blog</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://fanzheng.org/">fz</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">爱生活 不爱bug 爱生活 不爱黑眼圈 我和你们一样 我和你们不一样 我不是凡客   我是geek</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">物种的进化</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://img1.mydrivers.com/img/20141207/2b6cb08841554201b254348b6d260eb5.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">物种的进化</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-题解/POJ/POJ2677" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/11/题解/POJ/POJ2677/" class="article-date">
+  	<time datetime="2015-10-11T04:16:20.000Z" itemprop="datePublished">2015-10-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      POJ3281 Dining
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/POJ/">POJ</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/动态规划/">动态规划</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="题目">题目</h1><h2 id="Description">Description</h2><p>2000MS/65536K<br>John Doe, a skilled pilot, enjoys traveling. While on vacation, he rents a small plane and starts visiting beautiful places. To save money, John must determine the shortest closed tour that connects his destinations. Each destination is represented by a point in the plane pi = &lt; xi,yi &gt;. John uses the following strategy: he starts from the leftmost point, then he goes strictly left to right to the rightmost point, and then he goes strictly right back to the starting point. It is known that the points have distinct x-coordinates.<br>Write a program that, given a set of n points in the plane, computes the shortest closed tour that connects the points according to John’s strategy.<br><a id="more"></a></p>
+<h2 id="Input">Input</h2><p>The program input is from a text file. Each data set in the file stands for a particular set of points. For each set of points the data set contains the number of points, and the point coordinates in ascending order of the x coordinate. White spaces can occur freely in input. The input data are correct.</p>
+<h2 id="Output">Output</h2><p>For each set of data, your program should print the result to the standard output from the beginning of a line. The tour length, a floating-point number with two fractional digits, represents the result. An input/output sample is in the table below. Here there are two data sets. The first one contains 3 points specified by their x and y coordinates. The second point, for example, has the x coordinate 2, and the y coordinate 3. The result for each data set is the tour length, (6.47 for the first data set in the given example).</p>
+<h2 id="Simple_input">Simple input</h2><p>3<br>1 1<br>2 3<br>3 1<br>4<br>1 1<br>2 3<br>3 1<br>4 2</p>
+<h2 id="Simple_output">Simple output</h2><p>6.47<br>7.89</p>
+<h2 id="题目分析">题目分析</h2><p>这个题的算法学名叫做“双调欧几里得旅行商问题”，即在平面上的n个点，确定一条闭合的线连接这n个点且使这条线最短，这类的问题建议只考虑双调旅程来化简，即严格按照从最左端邹至最右端，然后再从最右端走回最左端的出发点。<br>既然所求的结果是n个点连接成一个闭合的多边形，那么在这n个点中存在着这样的子结构，(i,j)为从i开始由右到左直到1，在由1开始由左到右直到j，这之间会经过1到max(i,j)之间的所有的点并且只有一次。定义这样最短的路线为d(i,j)<br>即我们最后要求的解则应该是d(n,n)<br>子结构分为三种情况:1.当j&lt;i-1时,2.当j=i-1的时候,3.当j=i时<br>1.当j&lt;i-1的时候，由我们子结构的定义可得点i-1一定在(i,j)上且从1出发向右的时候结尾一定是j，所以与i相邻的点一定是i-1，则(i,j)=(i-1,j)+dis(i-1,i).<br>2.当j=i-1的时候,与i相邻的点可以是1-i-1中的任意一个点（不包括i-1),因为最后要返回i-1且并不能确定哪一条路是最短的。则(i,j)=min{(k,j)+dis(i,k)}.<br>3.当j=i的时候，路径上最后两个相邻的点可以是1,2,3…..i-1中的任意一个点与i.则(i,i)=min{dis(i,1)+(i,1),dis(i,2)+(i,2),……,dis(i,i-1)+(i,i-1)}.</p>
+<h2 id="AC代码">AC代码</h2><p>1168K/0MS<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> dp[<span class="number">1000</span>][<span class="number">1000</span>];<span class="comment">///用于记录两个点之间的最短路径</span></span><br><span class="line"><span class="comment">//double tp[1000][1000];</span></span><br><span class="line"><span class="keyword">struct</span> node</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">double</span> x,y;</span><br><span class="line">&#125;;</span><br><span class="line">node point[<span class="number">10000</span>];</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">cmp</span><span class="params">(node a,node b)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.x!=b.x)</span><br><span class="line">        <span class="keyword">return</span> a.x&lt;b.x;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a.y&lt;b.y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">distint</span><span class="params">(node a,node b)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sqrt</span>((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">/*while(1)</span><br><span class="line">    &#123;</span><br><span class="line">        double a,b;</span><br><span class="line">        double c,d;</span><br><span class="line">        scanf("%lf%lf%lf%lf",&amp;a,&amp;b,&amp;c,&amp;d);</span><br><span class="line">        printf("%.2lf\n",sqrt((a-c)*(a-c)+(b-d)*(b-d)));</span><br><span class="line">    &#125;*/</span></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(point,<span class="number">0</span>,<span class="keyword">sizeof</span>(point));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//scanf("%lf%lf",&amp;point[i].x,&amp;point[i].y);</span></span><br><span class="line">            <span class="built_in">cin</span>&gt;&gt;point[i].x&gt;&gt;point[i].y;</span><br><span class="line">        &#125;</span><br><span class="line">        sort(point,point+n,cmp);</span><br><span class="line">        dp[<span class="number">1</span>][<span class="number">2</span>]=distint(point[<span class="number">1</span>],point[<span class="number">2</span>]);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">3</span>; j &lt;= n; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= j - <span class="number">2</span>; i++)<span class="comment">///i&lt;j-1的时候，b[i][j]=b[j][i-1]+dis(i-1,i);</span></span><br><span class="line">                &#123;</span><br><span class="line">                    dp[i][j] = dp[i][j - <span class="number">1</span>] + distint(point[j-<span class="number">1</span>],point[j]);</span><br><span class="line">                &#125;</span><br><span class="line">                dp[j-<span class="number">1</span>][j]=<span class="number">999999</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= j - <span class="number">2</span>; k++)<span class="comment">///查找最短的距离，当j=i-1的时候。。i = j - 1,dp[i][j] = min(dp[k][j - 1] + dis(k,j));</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(dp[k][j - <span class="number">1</span>] + distint(point[k],point[j])&lt;dp[j-<span class="number">1</span>][j])</span><br><span class="line">                dp[j - <span class="number">1</span>][j] = dp[k][j - <span class="number">1</span>] + distint(point[k],point[j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        dp[n][n]=dp[n-<span class="number">1</span>][n]+distint(point[n-<span class="number">1</span>],point[n]);</span><br><span class="line">        <span class="comment">//printf("%.2lf\n",dp[n][n]);</span></span><br><span class="line">        <span class="built_in">cout</span>.setf(ios::fixed);</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;setprecision(<span class="number">2</span>)&lt;&lt;dp[n][n]&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="题目链接">题目链接</h2><p><a href="http://poj.org/problem?id=2677" target="_blank" rel="external">http://poj.org/problem?id=2677</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/06/题解/HDU/hdu2586/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HDU2586 How far away</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="题解/POJ/POJ2677" data-title="POJ3281 Dining" data-url="http://yoursite.com/2015/10/11/题解/POJ/POJ2677/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"darkknight"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 物种的进化
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
