@@ -110,7 +110,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/ACM/" style="font-size: 20px;">ACM</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/HDU/" style="font-size: 16.67px;">HDU</a> <a href="/tags/POJ/" style="font-size: 16.67px;">POJ</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/算法基础/" style="font-size: 13.33px;">算法基础</a>
+						<a href="/tags/ACM/" style="font-size: 20px;">ACM</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/HDU/" style="font-size: 17.5px;">HDU</a> <a href="/tags/POJ/" style="font-size: 15px;">POJ</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/算法基础/" style="font-size: 12.5px;">算法基础</a>
 					</div>
 				</section>
 				
@@ -181,6 +181,131 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-算法/邻接表" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/04/算法/邻接表/" class="article-date">
+  	<time datetime="2015-08-04T13:50:48.000Z" itemprop="datePublished">2015-08-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/04/算法/邻接表/">邻接表问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="相关的介绍">相关的介绍</h1><h2 id="描述">描述</h2><p>图的邻接矩阵存储方法跟树的孩子链表示法相类似，是一种顺序分配和链式分配相结合的存储结构。如这个表头结点所对应的顶点存在相邻顶点，则把相邻顶点依次存放于表头结点所指向的单向链表中。如词条概念图所示，表结点存放的是邻接顶点在数组中的索引。对于无向图来说，使用邻接表进行存储也会出现数据冗余，表头结点A所指链表中存在一个指向C的表结点的同时，表头结点C所指链表也会存在一个指向A的表结点，在无向图内会成环。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法基础/">算法基础</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/算法/">算法</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/08/04/算法/邻接表/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-题解/POJ/POJ2239" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/04/题解/POJ/POJ2239/" class="article-date">
+  	<time datetime="2015-08-04T07:38:48.000Z" itemprop="datePublished">2015-08-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/04/题解/POJ/POJ2239/">POJ2239 Selecting Courses</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="题目">题目</h1><h2 id="Description">Description</h2><p>1000MS/65536K<br>It is well known that it is not easy to select courses in the college, for there is usually conflict among the time of the courses. Li Ming is a student who loves study every much, and at the beginning of each term, he always wants to select courses as more as possible. Of course there should be no conflict among the courses he selects. </p>
+<p>There are 12 classes every day, and 7 days every week. There are hundreds of courses in the college, and teaching a course needs one class each week. To give students more convenience, though teaching a course needs only one class, a course will be taught several times in a week. For example, a course may be taught both at the 7-th class on Tuesday and 12-th class on Wednesday, you should assume that there is no difference between the two classes, and that students can select any class to go. At the different weeks, a student can even go to different class as his wish. Because there are so many courses in the college, selecting courses is not an easy job for Li Ming. As his good friends, can you help him?<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/POJ/">POJ</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/二分图/">二分图</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/08/04/题解/POJ/POJ2239/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-题解/POJ/POJ2536" class="article article-type-post" itemscope itemprop="blogPost">
   
