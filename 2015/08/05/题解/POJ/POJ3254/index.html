@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>POJ3254 Corn Fields | fire in the dark</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="题目Description2000MS/65536KFarmer John has purchased a lush new rectangular pasture composed of  M  by  N  (1 ≤  M  ≤ 12; 1 ≤  N  ≤ 12) square parcels. He wants to grow some yummy corn for the cows on">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POJ3254 Corn Fields">
+<meta property="og:url" content="http://yoursite.com/2015/08/05/题解/POJ/POJ3254/index.html">
+<meta property="og:site_name" content="fire in the dark">
+<meta property="og:description" content="题目Description2000MS/65536KFarmer John has purchased a lush new rectangular pasture composed of  M  by  N  (1 ≤  M  ≤ 12; 1 ≤  N  ≤ 12) square parcels. He wants to grow some yummy corn for the cows on">
+<meta property="og:updated_time" content="2016-07-11T09:01:19.017Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="POJ3254 Corn Fields">
+<meta name="twitter:description" content="题目Description2000MS/65536KFarmer John has purchased a lush new rectangular pasture composed of  M  by  N  (1 ≤  M  ≤ 12; 1 ≤  N  ≤ 12) square parcels. He wants to grow some yummy corn for the cows on">
+  
+    <link rel="alternative" href="/atom.xml" title="fire in the dark" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://img1.mydrivers.com/img/20141207/2b6cb08841554201b254348b6d260eb5.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">物种的进化</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/ACM/" style="font-size: 20px;">ACM</a> <a href="/tags/ACM，DP/" style="font-size: 12.5px;">ACM，DP</a> <a href="/tags/ACM��DP/" style="font-size: 10px;">ACM��DP</a> <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/HDU/" style="font-size: 17.5px;">HDU</a> <a href="/tags/PAT/" style="font-size: 10px;">PAT</a> <a href="/tags/POJ/" style="font-size: 15px;">POJ</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/算法基础/" style="font-size: 12.5px;">算法基础</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://gyshgx868.github.io/">gyshgx868的blog</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://fanzheng.org/">fz</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://tak3ncpp.github.io/">Tak3n</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">爱生活 不爱bug 爱生活 不爱黑眼圈 我和你们一样 我和你们不一样 我不是凡客   我是geek</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">物种的进化</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://img1.mydrivers.com/img/20141207/2b6cb08841554201b254348b6d260eb5.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">物种的进化</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-题解/POJ/POJ3254" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/05/题解/POJ/POJ3254/" class="article-date">
+  	<time datetime="2015-08-05T09:16:20.000Z" itemprop="datePublished">2015-08-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      POJ3254 Corn Fields
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/POJ/">POJ</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/壮压DP/">壮压DP</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="题目">题目</h1><h2 id="Description">Description</h2><p>2000MS/65536K<br>Farmer John has purchased a lush new rectangular pasture composed of  M  by  N  (1 ≤  M  ≤ 12; 1 ≤  N  ≤ 12) square parcels. He wants to grow some yummy corn for the cows on a number of squares. Regrettably, some of the squares are infertile and can’t be planted. Canny FJ knows that the cows dislike eating close to each other, so when choosing which squares to plant, he avoids choosing squares that are adjacent; no two chosen squares share an edge. He has not yet made the final choice as to which squares to plant.</p>
+<p>Being a very open-minded man, Farmer John wants to consider all possible options for how to choose the squares for planting. He is so open-minded that he considers choosing no squares as a valid option! Please help Farmer John determine the number of ways he can choose the squares to plant.<br><a id="more"></a></p>
+<h2 id="Input">Input</h2><p>Line 1: Two space-separated integers:  M  and  N<br>Lines 2.. M +1: Line  i +1 describes row  i  of the pasture with  N  space-separated integers indicating whether a square is fertile (1 for fertile, 0 for infertile)</p>
+<h2 id="Output">Output</h2><p>Line 1: One integer: the number of ways that FJ can choose the squares modulo 100,000,000.</p>
+<h2 id="Simple_input">Simple input</h2><p>2 3<br>1 1 1<br>0 1 0</p>
+<h2 id="Simple_output">Simple output</h2><p>9</p>
+<h2 id="题目分析">题目分析</h2><p>题目大意： 农夫有一块地，被划分为m行n列大小相等的格子，其中一些格子是可以放牧的（用1标记），农夫可以在这些格子里放牛，其他格子则不能放牛（用0标记），并且要求不可以使相邻格子都有牛。现在输入数据给出这块地的大小及可否放牧的情况，求该农夫有多少种放牧方案可以选择（注意：任何格子都不放也是一种选择，不要忘记考虑！</p>
+<p>解题思路 ：以样例数据第一行为例，三个格子都可以放牧，即每个格子都可以选择放，或不放。再考虑附加条件“相邻格子不可同时放牧”，那么我们可以列出单看第一行时的所有可行状态如下（1代表放牧，0代表不放牧）</p>
+<p>编号    状态<br>1    0 0 0<br>2    0 0 1<br>3    0 1 0<br>4    1 0 0<br>5    1 0 1<br>（表1）<br>由此，可将表中的状态看作二进制表示，那么，只需将每种状态转化为相应的十进制数，即可只用一个数字，就能表示某一种状态，如下表：</p>
+<p>编号    二进制    十进制<br>1        0 0 0   0<br>2        0 0 1    1<br>3        0 1 0    2<br>4        1 0 0    4<br>5        1 0 1    5<br>（表2）<br>这种用一个数来表示一组数，以降低表示状态所需的维数的解题手段，就叫做状态压缩。<br>至此我们看到，在只考虑第一行的时候，有5种可行的放牧方案，但这只是我们要做的第一步。接下来要将第二行纳入考虑：</p>
+<p>首先思考：纳入第二行后，会对当前问题造成什么样的影响？</p>
+<p>答案还是那句话：“ 相邻格子不可同时放牧 ”！</p>
+<p>也就是说，不止左右相邻不可以，上下之间也不能存在相邻的情况。</p>
+<p>首先观察第二行，只有中间的格子可以放牧，那么我们的状态表格就可以相对简单些了～如下：</p>
+<p>编号    二进制    十进制<br>1    0 0 0    0<br>2    0 1 0    2<br>（表3）<br>只有两种可行状态，那么我们不妨一个一个来考察：<br>1、当第二行的状态为编号1时，第二行的三个格子都没有放牧，那么就不会与第一行的任何情况有冲突，第一行的5种方案都可行，即：第二行选用编号1的状态时，结合第一行，可得到5种可行的放牧方案；</p>
+<p>2、当第二行的状态为编号2时，第二行中间的格子已经放牧了，那么第一行中间的格子就不可以放牧。看表2，发现其中第3种状态与当前第二行冲突，那么第一行只有4种方案是可行的，即：第二行选用编号2的状态时，结合第一行，可得到4种可行的放牧方案；</p>
+<p>那么，在样例数据给出的情况下，我们的最终答案即为5+4=9；</p>
+<p>通过对样例数据的分析即可以发现不同状态之间的关系：</p>
+<p>以 dp[i][state(j)] 来表示对于 前i行 ， 第i行 采用 第j种状态 时可以得到的 可行方案总数！</p>
+<p>例如：回头看样例数据，dp[2][1]即代表第二行使用第2中状态（0 1 0）时可得的方案数，即为4；</p>
+<p>那么，可得出状态转移方程为：</p>
+<p>dp[i][state(j)]=dp[i-1][state(k1)]+dp[i-1][state(k2)]+……+dp[i-1][state(kn)] (kn即为上一行可行状态的编号，上一行共有n种可行状态）</p>
+<p>最终ans=dp[m][state(k1)]+dp[m][state(k2)]+……+dp[m][state(kn)]; (kn即为 最后一 行 （第m行） 可行状态的编号）<br><a href="http://www.tuicool.com/articles/JVzMVj" target="_blank" rel="external">http://www.tuicool.com/articles/JVzMVj</a></p>
+<h2 id="AC代码">AC代码</h2><p>924K/16MS<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> MS(x,y) memset(x,y,sizeof(x))</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> MC(x,y) memcpy(x,y,sizeof(x))</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fre</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    freopen(<span class="string">"c://test//input.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"c://test//output.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> MP(x,y) make_pair(x,y)</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> UL;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> UI;</span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> debug puts(<span class="string">"----------"</span>)</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> inf <span class="number">0x3f3f</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> maxn <span class="number">1050</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> mod = <span class="number">100000000</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">13</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> M = <span class="number">1</span>&lt;&lt;N;</span><br><span class="line"><span class="keyword">int</span> dp[N][M];</span><br><span class="line"><span class="keyword">int</span> mapp[M],st[M];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">judge1</span><span class="params">(<span class="keyword">int</span> x)</span><span class="comment">//横向判断判断该行是否能够成立</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (x&amp;(x&lt;&lt;<span class="number">1</span>));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">judge2</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> n)</span><span class="comment">//判断x,n两行有没有重复的情况</span></span><br><span class="line"></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> (mapp[x]&amp;st[n]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span><br><span class="line">此处，注意要用相反存储的数据来判断，</span><br><span class="line">因为若10101001是一种可行状态，则可知101001也可行（是前者的一部分）</span><br><span class="line">这时x即为10101001，cur[k]为10110，x&amp;cur[k]=0，即符合条件</span><br><span class="line">*/</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">//int x = 3;</span></span><br><span class="line">    <span class="comment">//printf("%d %d %d\n",x,x&lt;&lt;1,x&amp;x&lt;&lt;1);</span></span><br><span class="line">    <span class="keyword">int</span> n,m,x;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(dp,<span class="number">0</span>,<span class="keyword">sizeof</span>(dp));</span><br><span class="line">        <span class="built_in">memset</span>(mapp,<span class="number">0</span>,<span class="keyword">sizeof</span>(mapp));</span><br><span class="line">        <span class="built_in">memset</span>(st,<span class="number">0</span>,<span class="keyword">sizeof</span>(st));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i&lt;=n; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j&lt;=m; j++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</span><br><span class="line">                <span class="keyword">if</span>(x==<span class="number">0</span>)</span><br><span class="line">                    mapp[i]+=(<span class="number">1</span>&lt;&lt;(j-<span class="number">1</span>));<span class="comment">///反向存储，将该位置置为1</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;(<span class="number">1</span>&lt;&lt;m); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!judge1(i))<span class="comment">//可行，则增添一种可能性</span></span><br><span class="line">                st[k++]=i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;k; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!judge2(<span class="number">1</span>,i))<span class="comment">//判断第i种状态与第一行是否重合</span></span><br><span class="line">                dp[<span class="number">1</span>][i]=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">//        for(int i=0;i&lt;k;i++)</span></span><br><span class="line"><span class="comment">//        &#123;</span></span><br><span class="line"><span class="comment">//            printf("%d\n",dp[i][1]);</span></span><br><span class="line"><span class="comment">//        &#125;</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>; i&lt;=n; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;k; j++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(judge2(i,j))</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> f=<span class="number">0</span>; f&lt;k; f++)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span>(judge2(i-<span class="number">1</span>,f))<span class="comment">//纵向判断两行情况</span></span><br><span class="line">                        <span class="keyword">continue</span>;</span><br><span class="line">                    <span class="keyword">if</span>(!(st[j]&amp;st[f]))<span class="comment">//横向判断情况数目</span></span><br><span class="line">                        dp[i][j]+=dp[i-<span class="number">1</span>][f];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;k; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//printf("%d + \n",dp[n][i]);</span></span><br><span class="line">            ans+=dp[n][i];</span><br><span class="line">            ans%=mod;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="题目链接">题目链接</h2><p><a href="http://poj.org/problem?id=3254" target="_blank" rel="external">http://poj.org/problem?id=3254</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/08/05/算法/网络流/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          网络流之最大流
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/08/05/题解/POJ/POJ3281/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">POJ3281 Dining</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="题解/POJ/POJ3254" data-title="POJ3254 Corn Fields" data-url="http://yoursite.com/2015/08/05/题解/POJ/POJ3254/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"darkknight"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 物种的进化
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
