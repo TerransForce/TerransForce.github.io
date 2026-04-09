@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(208, 139, 50, 0.25), transparent 30%),
